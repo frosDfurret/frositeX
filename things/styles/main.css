@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap');
+
+body {
+  font-family: "Space Grotesk";
+  background-color: black;
+}
+
+#nodarkreader {
+  z-index: 1337;
+  position: fixed;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  visibility: hidden;
+}
+
+#logo {
+  width: 400px;
+  padding-bottom: 10px;
+}
+
+#main-content {
+  transition-property: top left;
+  transition-duration: 0.5s;
+  background-color: white;
+  z-index: 69;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.drawer {
+  position: fixed;
+  background: rgb(10,17,24);
+  color: white;
+  overflow-y: scroll;
+}
+
+#socials-content {
+  height: 100%;
+  width: 333px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(270deg, rgba(10,17,24,1) 0%, rgba(15,25,41,1) 6%, rgba(11,29,52,1) 100%);
+  visibility: hidden;
+  text-align: center;
+}
+
+.social-links {
+  color: white;
+  text-decoration: none;
+  background-color: gray;
+  margin: 111px 333px;
+}
+
+#projects-content {
+  height: calc(100% - 55px);
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(10,17,24,1) 0%, rgba(15,25,41,1) 6%, rgba(11,29,52,1) 100%);
+  visibility: hidden;
+}
+
+#about-content {
+  height: calc(100% - 30px);
+  width: 303px;
+  top: 0px;
+  right: 0px;
+  background: linear-gradient(90deg, rgba(10,17,24,1) 0%, rgba(15,25,41,1) 6%, rgba(11,29,52,1) 100%);
+  visibility: hidden;
+  padding: 15px;
+  text-align: center;
+}
+
+.smalltext {
+  font-weight: 300;
+  display:block;
+  font-size: 11px;
+  line-height: 12px;
+}
+
+#about-text {
+  text-align: left; 
+  display: inline-block; 
+  line-height: 22px;
+}
+
+.brbutcool {
+  display: block;
+  margin-bottom: 1em;
+}
+
+#shade {
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  z-index: 420;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  visibility: hidden;
+  opacity: 0;
+}
+
+#shade:hover {
+  cursor: pointer;
+}
+
+.nav-button {
+  transition-property: text-decoration-color;
+  transition-duration: 0.2s;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 32px;
+  text-decoration: underline 1.5px rgba(0, 0, 0, 0);
+}
+
+.nav-button:hover {
+  text-decoration-color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+#socials-button {
+  padding-right: 155px;
+}
+
+#projects-button {
+  padding-left: 66px;
+  padding-right: 66px;
+}
+
+#about-button {
+  padding-left: 170px;
+}
+
+#inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+#footer {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 10px;
+}
+
+#extract {
+  flavor: 'vanilla';
+  tasty: 100%;
+}
