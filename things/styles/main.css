@@ -5,6 +5,26 @@ body {
   background-color: black;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 #nodarkreader {
   z-index: 1337;
   position: fixed;
@@ -40,11 +60,13 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  box-shadow: 0px 0px 33px 8px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 0px 0px 33px 8px rgba(0, 0, 0, 0.55);
 }
 
 .drawer {
   position: fixed;
-  background: rgb(10,17,24);
+  background-color: rgba(11,29,52,1);
   color: white;
   overflow-y: scroll;
 }
@@ -54,16 +76,50 @@ body {
   width: 333px;
   top: 0;
   left: 0;
-  background: linear-gradient(270deg, rgba(10,17,24,1) 0%, rgba(15,25,41,1) 6%, rgba(11,29,52,1) 100%);
+  /* background: linear-gradient(270deg, rgba(10,17,24,1) 0%, rgba(15,25,41,1) 6%, rgba(11,29,52,1) 100%); */
   visibility: hidden;
   text-align: center;
 }
 
 .social-links {
+  transition-property: background-color;
+  transition-duration: 0.2s;
   color: white;
   text-decoration: none;
-  background-color: gray;
-  margin: 111px 333px;
+  border: 0px;
+  width: 333px;
+  height: 77px;
+  font-size: 30px;
+  font-family: "Space Grotesk";
+  background-color: rgba(var(--rgb), 0.22)
+}
+
+.social-links:hover {
+  background-color: rgba(var(--rgb), 1)
+}
+
+#social-discord {
+  --rgb: 114,137,218;
+}
+
+#social-email {
+  --rgb: 128,128,128;
+}
+
+#social-github {
+  --rgb: 68,0,99;
+}
+
+#social-newgrounds {
+  --rgb: 255,202,22;
+}
+
+#social-reddit {
+  --rgb: 255,87,0;
+}
+
+#social-roblox {
+  --rgb: 255,0,0;
 }
 
 #projects-content {
@@ -71,18 +127,18 @@ body {
   width: 100%;
   bottom: 0;
   left: 0;
-  background: linear-gradient(180deg, rgba(10,17,24,1) 0%, rgba(15,25,41,1) 6%, rgba(11,29,52,1) 100%);
   visibility: hidden;
 }
 
 #about-content {
-  height: calc(100% - 30px);
-  width: 303px;
+  height: calc(100% - 25px);
+  width: 283px;
   top: 0px;
   right: 0px;
-  background: linear-gradient(90deg, rgba(10,17,24,1) 0%, rgba(15,25,41,1) 6%, rgba(11,29,52,1) 100%);
+  /* background: linear-gradient(90deg, rgba(10,17,24,1) 0%, rgba(15,25,41,1) 6%, rgba(11,29,52,1) 100%); */
   visibility: hidden;
-  padding: 15px;
+  padding: 25px;
+  padding-top: 0px;
   text-align: center;
 }
 
